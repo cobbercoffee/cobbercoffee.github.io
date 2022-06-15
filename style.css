@@ -1,0 +1,260 @@
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+a, abbr, acronym, address, applet, article, aside, audio, b,
+big, blockquote, body, canvas, caption, center, cite, code,
+dd, del, details, dfn, div, dl, dt, em, embed, fieldset,
+figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6,
+header, hgroup, html, i, iframe, img, ins, kbd, label, legend,
+li, main, mark, menu, nav, object, ol, output, p, pre, q,
+ruby, s, samp, section, small, span, strike, strong, sub,
+summary, sup, table, tbody, td, tfoot, th, thead, time, tr,
+tt, u, ul, var, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  list-style: none;
+  vertical-align: baseline;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: 150ms all ease-in-out;
+}
+
+html, body {
+  position: relative;
+  margin: 0;
+  background-color: #FDF2E6;
+  overflow-x: hidden;
+}
+body {
+  -webkit-font-smoothing: antialiased;
+  position: relative;
+  display: block;
+  width: 100%;
+  min-width: 300px;
+  max-width: 400px;
+  height: 100%;
+  min-height: 400px;
+  margin: 0 auto;
+  padding: 0px;
+  background-color: #FDF2E6;
+  font-family: "Helvetica Neue", sans-serif;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.3;
+  color: #252525;
+}
+
+input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  display: block;
+  width: auto;
+  height: 32px;
+  margin: 0;
+  padding: 6px 9px;
+  background-color: transparent;
+  border: 2px solid #000000;
+  border-radius: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #000000;
+  outline: none;
+}
+
+main {
+  padding: 0 1rem;
+}
+main section {
+  position: relative;
+  margin: 4rem 0;
+  border: 0 solid #252525;
+  border-width: 3px 0;
+  margin-right: -1rem;
+}
+section h2 {
+  padding: 1rem 0;
+  font-size: 1.4rem;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+section ul li {
+  border: 0 solid #252525;
+  border-top-width: 2px;
+}
+section .item {
+  position: relative;
+  display: block;
+  margin: 0 -1rem;
+  padding: .25rem 1rem;
+  /*padding-left: calc(1rem + 24px);*/
+  padding-right: 2rem;
+}
+section .item .info,
+section .item .option,
+section .item .button {
+  width: 100%;
+  margin: .75rem 0;
+}
+section .item .info {
+  display: table;
+  /*width: calc(100% + 24px);
+  margin-left: -24px;*/
+}
+section .item .main {
+  display: inline-block;
+  width: calc(100% - 40px);
+}
+section .item .side {
+  display: inline-block;
+  width: 40px;
+  text-align: right;
+  vertical-align: top;
+}
+section .item .option,
+section .item .option + .button {
+  border: 0 solid #9d9d9d;
+  border-top-width: 1px;
+}
+section .item .option + .button {
+  padding-top: .75rem;
+}
+section .item .option .select {
+  padding: .5rem 0;
+  font-size: .9rem;
+  font-weight: 400;
+}
+section .item .option .row {
+  display: block;
+  margin: 0;
+  margin-left: 1.5rem;
+  border: 0 dotted #9d9d9d;
+}
+section .item .option .select + .row {
+  border-top-width: 1px;
+}
+section .item .option .row + .row {
+  border-top-width: 1px;
+}
+section .item .option .row:last-child {
+  margin-bottom: -.75rem;
+}
+section .item .option .row label {
+  position: relative;
+  display: table;
+  width: 100%;
+  padding: .5rem 0;
+}
+section .item .option .row label input {
+  position: absolute;
+  display: block;
+  top: 9px;
+  left: 0px;
+  width: 16px;
+  height: 16px;
+  margin: 0;
+  background-color: transparent;
+  border: 2px solid #000000;
+  border-radius: 50%;
+}
+section .item .option .row label input:checked {
+  box-shadow: inset 0 0 0 3px #FDF2E6, inset 0 0 0 8px #000000;;
+}
+section .item .option .row label .main {
+  padding-left: 24px;
+  font-size: .9rem;
+  font-weight: 500;
+}
+section .item .button button {
+  margin-left: auto;
+}
+
+section .item .name {
+  font-size: 1rem;
+}
+section .item .about {
+  margin-top: 3px;
+  font-size: .9rem;
+  font-weight: 400;
+}
+section .item .tag {
+  display: block;
+  margin-top: 4px;
+  font-size: .7rem;
+  font-weight: 900;
+}
+section .item .price {
+  display: inline-block;
+  font-size: .9rem;
+  color: #606060;
+}
+section .item fieldset {
+  position: relative;
+  display: block;
+  width: 100%;
+  max-width: 120px;
+  margin-left: auto;
+  margin-right: -12px;
+  margin-bottom: -8px;
+  outline: none;
+}
+section .item .price + fieldset {
+  margin-top: -32px;
+}
+section .item fieldset input,
+section .item fieldset button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  display: block;
+  background-color: transparent;
+  border: none;
+  color: #606060;
+  outline: none;
+}
+section .item fieldset input {
+  width: 100%;
+  height: 32px;
+  margin: 0;
+  padding: 0 32px;
+  border: none;
+  font-size: .9rem;
+  text-align: center;
+  color: #606060;
+}
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+section .item fieldset button {
+  position: absolute;
+  top: 0;
+  width: 32px;
+  height: 32px;
+}
+section .item fieldset button:active {
+  color: #606060;
+}
+section .item fieldset button.sub {
+  left: 0;
+}
+section .item fieldset button.add {
+  right: 0;
+}
