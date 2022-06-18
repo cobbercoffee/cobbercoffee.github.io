@@ -3,13 +3,73 @@
   <head>
     <meta charset="utf-8">
     <title>Cobber Coffee</title>
-    <link rel="stylesheet" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="style.css">
     <script> </script>
   </head>
   <body>
 
-    <main id="menu">
+    <menu>
+      <div class="wrap">
+        <ul class="menu__row">
+          <li class="menu__logo">
+            <a href="#">
+              <h1>Cobber Coffee</h1>
+            </a>
+          </li>
+          <li class="menu__button">
+            <button type="button">
+              <span>Cart</span>
+              <span data-menu-role="cart-counter"></span>
+            </button>
+          </li>
+        </ul>
+      </div>
+    </menu>
+
+    <nav>
+      <div class="wrap">
+        <ul class="nav__row">
+          <li>
+            <a class="button" href="#">
+              <span>New Items</span>
+            </a>
+          </li>
+          <li>
+            <a class="button" href="#">
+              <span>Soufflé Pancake</span>
+            </a>
+          </li>
+          <li>
+            <a class="button" href="#baristas-choice">
+              <span>Barista's Choice</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span>Soufflé Pancake</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span>Soufflé Pancake</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span>Soufflé Pancake</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span>Soufflé Pancake</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <main data-menu-role="menu-content">
 
       <section>
         <h2>Soufflé Pancake</h2>
@@ -50,7 +110,7 @@
         </ul>
       </section>
 
-      <section>
+      <section id="baristas-choice">
         <h2>Barista's Choice</h2>
 
         <ul>
